@@ -3,12 +3,12 @@ import { useEffect, useState } from 'react' // Hooks
 import './App.css';
 
 // Importamos los componentes principales de la aplicación
-import Header from './Header'
-import CardPrincipal from './components/CardPrincipal.jsx';
-import Card from './components/Card.jsx'
-import Convert from './Convert'
-import TableCoins from './TableCoins'
-import Footer from './Footer'
+import Header from './components/Header'
+import CardPrincipal from './components/CardPrincipal';
+import Card from './components/Card'
+import Convert from './components/Convert'
+import TableCoins from './components/TableCoins'
+import Footer from './components/Footer'
 
 function App() {
   /*

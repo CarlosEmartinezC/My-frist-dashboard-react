@@ -1,5 +1,5 @@
-import InputConvert from './src/components/inputConvert.jsx'
-import './Convert.css'
+import InputConvert from './inputConvert'
+import '../Convert.css'
 import { FaExchangeAlt } from "react-icons/fa";
 import {useState, useEffect} from 'react'
 

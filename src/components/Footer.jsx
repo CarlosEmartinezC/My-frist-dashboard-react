@@ -1,8 +1,8 @@
 import React from 'react'
-import './Footer.css'
-import LogoAngela from './img/LogoAngela.svg'
+import '../Footer.css'
+import LogoAngela from '../img/Calculadora.jpeg'
 
-export default function Footer () :Element {
+export default function Footer () {
     return (
         <div className='Footer'>
             <div className='footer-up'>
