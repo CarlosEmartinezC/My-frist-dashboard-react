@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react' // Hooks
+import { useEffect, useState, } from 'react' // Hooks
 // Importamos nuestra hoja de estilos
 import './App.css';
 
@@ -9,8 +9,17 @@ import Card from './components/Card'
 import Convert from './components/Convert'
 import TableCoins from './components/TableCoins'
 import Footer from './components/Footer'
+import { useThemeContext } from './context/ThemeContext';
+
 
 function App() {
+ //Función switch dark mode
+ const {ContextTheme, setContextTheme} = useThemeContext()
+ const [checked, setChecked] = useState(false)
+ const handleSwitch = (nextChecked) => {
+  setContextTheme((state)=> (state ==='Light'? 'Dark':'Light'))
+  setChecked(nextChecked)
+ }
   /*
     Estados: Utilizaremos 3 estados principales
     Estado setCoins: Aquí vamos a almacenar el valor de todas las monedas que nos entrega el consumo de la API.
@@ -37,8 +46,7 @@ function App() {
     /* 
       Cuando hacemos el llamado de la API el valor que nos retorna es un arreglo de objetos tipo json, este valor lo vamos a almacenar en una variable y lo vamos a leer por medio del método json()
     */
-    const json = await response.json();
-    
+    const json = response.ok ? await response.json() : null;
     /*
       La siguiente URL la generamos de la API para que nos permita acceder a diferentes divisas, esta URL la almacenamos en una variable.
     */
@@ -74,8 +82,8 @@ function App() {
   return !coins ? (
     "Cargando..."
   ) : (
-    <div className="App">
-      <Header currencys={currency} fun={setSelCur} cur={selCur} />
+    <div className="App" >
+      <Header currencys={currency} fun={setSelCur} cur={selCur} checked={checked} handleSwitch={handleSwitch}/>
       <main>
         <CardPrincipal json={coins[0]} cur={selCur} />
 

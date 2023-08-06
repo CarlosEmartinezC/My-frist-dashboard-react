@@ -1,6 +1,6 @@
 import React from 'react'
 import '../Footer.css'
-import LogoAngela from '../img/Calculadora.jpeg'
+import Logo from '../img/Firma_al_final-removebg-preview.png'
 
 export default function Footer () {
     return (
@@ -17,14 +17,13 @@ export default function Footer () {
                 </div>
                 <div className='footer-c'>
                     <p>Crypto Stadistics</p>
-                    <p>© 2022</p> 
+                    <p>© 2023</p> 
                 </div>
 
                 <div className='footer-down'>
                     <p>Developed by</p>
-
                     <div>
-                        <img src={LogoAngela} alt='Logo Angela' />
+                        <img src={Logo} alt='Logo Angela'/>
                     </div> 
                 </div>
             </div>
