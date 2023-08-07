@@ -40,8 +40,8 @@
   
   @media (min-width: 1440px) { 
     .contenedor {
-      margin: 0 ;
-      padding: 0 3em;
+      margin: 0% auto 0 auto;
+      
     }
 
     select {

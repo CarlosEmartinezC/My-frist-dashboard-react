@@ -1,12 +1,13 @@
 .table_coins {
     width: 100%;
     margin: 5px;
+    margin: 5px 6.250em;
     padding: 0 95px 0 95px;
 }
 .table_coins.modo-oscuro{
     background:#181330a9;
     width: 85%;
-    margin: 5px 100px 5px 100px;
+    margin: 5px 6.250em;
     padding: 0 95px 0 95px;
     border-radius: 30px;
 }
@@ -62,3 +63,22 @@
 
 
 }
+
+@media (min-width: 1441px){
+    
+    .table_coins {
+        width: 85%;
+        margin: 5px 6.250em 5px 8.750em;
+        padding: 0 95px 0 95px;
+        border-radius: 30px;
+    }
+    .table_coins.modo-oscuro{
+        background:#181330a9;
+        width: 85%;
+        margin: 5px 6.250em 5px 8.750em;
+        padding: 0 95px 0 95px;
+        border-radius: 30px;
+    }
+
+}
+    
