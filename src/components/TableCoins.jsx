@@ -1,10 +1,12 @@
 import React from 'react'
-import '../TableCoins.css'
+import '../styles/TableCoins.css'
 import CoinRow from './CoinRow'
+import { useThemeContext } from '../context/ThemeContext';
 
 export default function TableCoins({coins}) {
+  const {contextTheme}=useThemeContext()
   return (
-    <table className='table_coins'>
+    <table className={`table_coins ${contextTheme === 'Dark' ? 'modo-oscuro' : ''}`}>
       <thead>
         <tr>
           <td>#</td>

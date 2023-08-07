@@ -2,11 +2,19 @@
     --url: "ds";
   }
   .contenedor {
-    background-color: rgb(4 217 157 / 0.21);
+    background-color: rgba(4, 114, 217, 0.603);
     padding: 20px 30px 30px;
     border-radius: 10px;
     width: 85%;
-    margin: 60% auto 0 auto;
+    margin: 0 auto 0 auto;
+  }
+
+  .contenedor.modo-oscuro {
+    background:#181330;
+    padding: 20px 30px 30px;
+    border-radius: 10px;
+    width: 85%;
+    margin: 0 auto 0 auto;
   }
   
   .contenedor h2 {
@@ -22,7 +30,7 @@
 
   @media (min-width: 768px) { 
     .contenedor {
-      margin: 25% auto 0 auto;
+      margin: 0% auto 0 auto;
     }
 
     .input-convert {
@@ -32,7 +40,8 @@
   
   @media (min-width: 1440px) { 
     .contenedor {
-      margin: 15% auto 0 auto;
+      margin: 0 ;
+      padding: 0 3em;
     }
 
     select {

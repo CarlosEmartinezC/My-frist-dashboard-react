@@ -1,10 +1,11 @@
 import InputConvert from './inputConvert'
-import '../Convert.css'
+import '../styles/Convert.css'
 import { FaExchangeAlt } from "react-icons/fa";
 import {useState, useEffect} from 'react'
-
+import { useThemeContext } from '../context/ThemeContext';
 
 export default function Convert() {
+    const {contextTheme}=useThemeContext()
     const [coin, setCoin] = useState([])
     const [selCoin1, setSelCoin1] = useState('btc')
     const [selCoin2, setSelCoin2] = useState('eth')
@@ -37,7 +38,7 @@ export default function Convert() {
     }, [mainTxt, selCoin1, selCoin2])
 
     return (
-        <div className='contenedor'>
+        <div className={`contenedor ${contextTheme === 'Dark' ? 'modo-oscuro' : ''}`}>
             <h2>Comparación de Monedas</h2>
 
             <div className='input-convert'>

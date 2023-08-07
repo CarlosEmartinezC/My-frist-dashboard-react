@@ -1,15 +1,22 @@
+header{
+  width: 100%;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+#Dark{
+  background-color: #181330;
+  color: white;
+}
   .app-header {
     display: flex;
     align-items: center;
-    background-color: #181330;
-    color: white;
+    background-color: #0759f3;
+    color: black;
     font-size:clamp(1rem,4vw,2.5rem);
-    line-height: 56px;
+    line-height: 1px;
   }
   .app-header p{
     width: 50%;
@@ -27,15 +34,25 @@
   #coinSelect{
     height: 25px;
     background-color: transparent;
-    border-color: #181330;
-    -webkit-animation: none;
-    color: grey;
+    border-color: #0759f3;
+    animation: none;
+    color: black;
     margin-right: 25px;
     text-transform: uppercase;
     font-size: 1.2rem;
   }
+  #coinSelect.Dark{
+    color: white;
+    background: #181330;
+    border-color: #181330;
+  }
+
   #coinSelect option{
-    color:rgb(190, 188, 188);
+    color:black;
+    background-color: #0759f3 ;
+  }
+  #coinSelect.Dark option{
+    color:white;
     background-color: #181330 ;
   }
   .toogleMode{
@@ -43,13 +60,6 @@
     border:none;
   
   }
-  svg{
-    font-size: 20px;
-    fill: white;
-  }
-  .iconToogle {
-    color: #fff;
-    width: 30px;
-    height: 30px;
-  }
+
+  
   

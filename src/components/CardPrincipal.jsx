@@ -1,15 +1,17 @@
-import '../CardPrincipal.css'
+import '../styles/CardPrincipal.css'
 import { deleteDec, colorDec } from '../App'
 import Graph from './Graph'
+import { useThemeContext } from '../context/ThemeContext';
 
 export default function CardPrincipal({ json: { id, symbol, current_price, image,               price_change_percentage_1h_in_currency, price_change_percentage_24h_in_currency, price_change_percentage_7d_in_currency, price_change_percentage_30d_in_currency, price_change_percentage_1y_in_currency }, cur= 'usd'}) {
+ const {contextTheme}=useThemeContext()
     return (
         <>
-            <article className="cripto-first">
+            <article className={`cripto-first ${contextTheme === 'Dark' ? 'modo-oscuro' : ''}`}>
                 <div className="cripto-info">
                     <img src={image} alt="Icono de la cripto" />
 
-                    <div className='cripto-title'>
+                    <div className={`cripto-title ${contextTheme === 'Dark' ? 'modo-oscuro' : ''}`}>
                         <h2>{symbol} - {current_price} {cur}</h2>
                         
                         <h2 className={`porcentaje ${colorDec(price_change_percentage_30d_in_currency)}`}>{deleteDec(price_change_percentage_30d_in_currency, 2)}%</h2>

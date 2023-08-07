@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from "react";
-import "../Graph.css";
+import "../styles/Graph.css";
 import { Line } from "react-chartjs-2";
 
 import {

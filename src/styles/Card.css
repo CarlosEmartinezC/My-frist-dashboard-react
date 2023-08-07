@@ -1,0 +1,44 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    background-color:#0086f3;
+    width: 18em;
+    height: 13em;
+    border-radius: 20px;
+    padding: 3px;
+    margin: auto;
+}
+.cards_con{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    place-items: center;
+    background-color:transparent;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
+}
+.card.modo-oscuro{
+    background: #181330;
+    color:white;
+}
+.cards_con .cripto-info h2{
+    font-size: 0.8em;
+}
+.title.modo-oscuro{
+    color: white;
+    background: #181330;
+}
+
+.cards_con .cripto-info .card-img{
+    width: 40px;
+    height: 40px;
+    margin: 5px 0 5px 2px;
+}
+
+.cards_con .graphic .graph{
+    width: 14em;
+    height: 7em;
+    background-color: white;
+}

@@ -1,17 +1,28 @@
-.cripto-first{
-    background: #090273;
-    width: 95%;
+
+.cripto-first.modo-oscuro{
+    background: #181330;
+    width:100%;
     max-width: 500px;
     border-radius: 20px;
     color: white;
-    padding: 20px;
+    padding: 10px;
+    text-align: center;
+}
+.cripto-first{
+    background: #0086f3;
+    width: 95%;
+    max-width: 500px;
+    border-radius: 20px;
+    color: black;
+    padding: 10px;
     text-align: center;
 }
 
-.graphic .graph{
+.cripto-first .graphic .graph{
     width: 100%;
-    height: 100%;
+    height: 15em;
     display: grid;
+    position: relative;
 }
 
 .capitalization h2{

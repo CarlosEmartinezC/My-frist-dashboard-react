@@ -1,6 +1,6 @@
 import { useEffect, useState, } from 'react' // Hooks
 // Importamos nuestra hoja de estilos
-import './App.css';
+import './styles/App.css';
 
 // Importamos los componentes principales de la aplicación
 import Header from './components/Header'
@@ -14,7 +14,7 @@ import { useThemeContext } from './context/ThemeContext';
 
 function App() {
  //Función switch dark mode
- const {ContextTheme, setContextTheme} = useThemeContext()
+ const {contextTheme, setContextTheme} = useThemeContext()
  const [checked, setChecked] = useState(false)
  const handleSwitch = (nextChecked) => {
   setContextTheme((state)=> (state ==='Light'? 'Dark':'Light'))
@@ -82,7 +82,7 @@ function App() {
   return !coins ? (
     "Cargando..."
   ) : (
-    <div className="App" >
+    <div className={`App ${contextTheme === 'Dark' ? 'modo-oscuro' : ''}`}>
       <Header currencys={currency} fun={setSelCur} cur={selCur} checked={checked} handleSwitch={handleSwitch}/>
       <main>
         <CardPrincipal json={coins[0]} cur={selCur} />
