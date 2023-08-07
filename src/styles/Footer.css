@@ -42,20 +42,25 @@ body{
 .footer-p p{
     font-size: 1.2rem
 }
-.footer-c{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin: 0;
-    padding: 0;
-
+.footer-p p a{
+    text-decoration: none;
+    color: black;
 }
-.footer-c p{
-    font-size: 1rem;
-    position:absolute;
+.footer-p p a :hover{
+    text-decoration: none;
+    color: white;
 }
-
+.footer-p.modo-oscuro{
+    background: #181330;
+}
+.footer-p.modo-oscuro p a{
+    text-decoration: none;
+    color: white;
+}
+.footer-p.modo-oscuro p a :hover{
+    text-decoration: none;
+    color: rgb(2, 208, 245);
+}
 .footer-down{
     display: flex;
     justify-content: center;

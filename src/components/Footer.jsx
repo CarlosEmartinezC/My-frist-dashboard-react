@@ -7,13 +7,13 @@ export default function Footer () {
     return (
         <div className={`Footer ${contextTheme === 'Dark' ? 'modo-oscuro' : ''}`}>
             <div className='footer-up'>
-                <div className='footer-p'>
-                    <p><b>DESCARGO DE RESPONSABILIDAD IMPORTANTE:</b> todo el contenido
-                        disponible en nuestro sitio web, en los sitios web
-                        hipervinculados, y en las aplicaciones, foros, blogs,
-                        cuentas de redes sociales y otras plataformas asociados 
-                        <b> "coingecko" </b> tienen como único objetivo proporcionarle
-                        información general procedente de fuentes externas.
+                <div className={`footer-p ${contextTheme === 'Dark' ? 'modo-oscuro' : ''}`}>
+                    <p><b>DESCARGO DE RESPONSABILIDAD IMPORTANTE:</b> Este sitio web se ha creado con
+                        fines educativos y tiene como objetivo proporcionar
+                        información general y conocimientos en el area financiera.
+                        El contenido presentado aquí se basa en el consumo de la API 
+                        de la pagina<a href='https://www.coingecko.com/es'><b> coingecko </b></a>
+                         su compilación y sintesis de la información disponible.
                     </p>
                     <br></br>
                     <br></br>
@@ -21,10 +21,8 @@ export default function Footer () {
                 </div>
                 <div className='footer-down'>
                     <p>Developed by</p>
-                        <img id='logo' src={Logo} alt='Logo Angela'/>
+                        <a href='https://github.com/CarlosEmartinezC'><img id='logo' src={Logo} alt='Logo del desarrollador' /></a>
                 </div> 
-                <div className='footer-c'>
-                </div>
             </div>
         </div>
     )
