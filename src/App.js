@@ -40,7 +40,7 @@ function App() {
       En per_page cambiamos el valor 100 por 4, ya que solo necesitamos las 4 primeras monedas, este valor puede ser cambiado de acuerdo a la información que quieran mostrar.
     */
     const response = await fetch(
-      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${selCur}&order=market_cap_desc&per_page=4&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C30d%2C90d%2C1y`
+      `https://api.coingecko.com/api/v3/coins/markets?vs_currency=${selCur}&order=market_cap_desc&per_page=5&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C30d%2C90d%2C1y`
     );
 
     /* 
