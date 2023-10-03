@@ -3,7 +3,7 @@
 
 ## Despliegue:
 
-https://carlosemartinezc.github.io/Restzshop/
+https://my-frist-dashboard-react.vercel.app
 
 ## Descripción del proyecto
 
